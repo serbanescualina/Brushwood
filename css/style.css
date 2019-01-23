@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Quicksand', sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+/* FONTS */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot?v=3.0.1");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype"), url("fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Font-Awesome-Social';
+  src: url("fonts/fontawesome-social-webfont.eot");
+  src: url("fonts/fontawesome-social-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-social-webfont.woff") format("woff"), url("fonts/fontawesome-social-webfont.ttf") format("truetype"), url("fonts/fontawesome-social-webfont.svg#Font-Awesome-More") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* BRUSHWOOD */
+.page {
+  overflow: hidden; }
+  .page .header-wrapper {
+    background: url(images/bg01.jpg) repeat-x center top;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.5); }
+    .page .header-wrapper .header-mobile {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      font-family: 'Quicksand', sans-serif; }
+      .page .header-wrapper .header-mobile a {
+        color: white; }
+      .page .header-wrapper .header-mobile h1 {
+        font-size: 35px;
+        font-weight: 600;
+        background: black;
+        padding: 10px; }
+      .page .header-wrapper .header-mobile .menu {
+        font-size: 25px;
+        margin-top: 20px; }
+        .page .header-wrapper .header-mobile .menu .fa-bars {
+          z-index: 1; }
+        .page .header-wrapper .header-mobile .menu .mobile-menu {
+          position: absolute;
+          right: 20px;
+          background: #ff8a0ec4;
+          padding: 10px 20px 10px 10px;
+          z-index: 2;
+          display: none;
+          font-size: 20px; }
+          .page .header-wrapper .header-mobile .menu .mobile-menu li {
+            padding: 3px 0;
+            text-transform: uppercase; }
+            .page .header-wrapper .header-mobile .menu .mobile-menu li:hover {
+              padding-bottom: 5px;
+              border-bottom: 1px solid #ffffff3b; }
+    .page .header-wrapper .desktop-menu {
+      display: none; }
+  .page .container-wrapper {
+    background: #F3F3F3;
+    padding: 40px;
+    text-align: center; }
+    .page .container-wrapper h2 {
+      color: #404040;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .page .container-wrapper p {
+      line-height: 30px; }
+      .page .container-wrapper p span {
+        font-weight: 600; }
+      .page .container-wrapper p a {
+        color: #ff8a0e; }
+  .page .articles-wrapper {
+    padding: 40px; }
+    .page .articles-wrapper .box {
+      text-align: center;
+      margin: 10px 0 30px 0; }
+      .page .articles-wrapper .box img {
+        margin-bottom: 15px; }
+      .page .articles-wrapper .box h3 {
+        color: #404040;
+        font-size: 21px;
+        font-weight: 500; }
+      .page .articles-wrapper .box p {
+        margin: 20px 0;
+        line-height: 1.5; }
+      .page .articles-wrapper .box button {
+        outline: none;
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        background: #ff8a0e;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer; }
+  .page .footer {
+    background: #404040;
+    text-align: center;
+    padding: 40px 0; }
+    .page .footer a {
+      color: white; }
+    .page .footer p {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 15px;
+      width: 90%;
+      margin: 0 auto; }
+    .page .footer .social-icon {
+      margin: 15px auto 0 auto;
+      width: 150px;
+      display: flex;
+      justify-content: space-between; }
+      .page .footer .social-icon li {
+        background: #ff8a0e;
+        width: 15px;
+        padding: 5px; }
+
+@media (min-width: 1024px) {
+  .page .header-wrapper {
+    padding: 50px 20px 100px 20px; }
+    .page .header-wrapper .header-mobile {
+      justify-content: unset; }
+      .page .header-wrapper .header-mobile .menu {
+        display: none; }
+    .page .header-wrapper .desktop-menu {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      background: #ff8a0e;
+      margin-left: 25%;
+      margin-top: 20px;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .page .header-wrapper .desktop-menu li a {
+        padding: 10px 15px;
+        width: 14%;
+        color: white; }
+        .page .header-wrapper .desktop-menu li a:hover {
+          color: rgba(245, 238, 238, 0.63);
+          background: #f1f1c747; }
+  .page .articles-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto; }
+    .page .articles-wrapper .box {
+      margin: 10px 15px 30px 15px; }
+    .page .articles-wrapper.desktop-arange h3 {
+      font-size: 16px; } }
+
+/*# sourceMappingURL=style.css.map */
